@@ -1,0 +1,62 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* end common */
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+#navbar{
+    background-color: aqua;
+    height: 70px;
+}
+#navbar .container .menu ul{
+    list-style: none;
+    display: flex;
+}
+#navbar .container .menu ul li{
+    padding: 10px;
+}
+#navbar .container .menu ul li a{
+    color: black;
+    transition: .3s;
+
+}
+#navbar .container .menu ul li a:hover{
+    background-color: rgb(0, 255, 64);
+    color: rgb(17, 19, 18);
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+.btn{
+    background-color: yellow;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: aqua;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 0;
+}
+.btn:hover{
+    background-color: aqua;
+    color: blueviolet;
+}
