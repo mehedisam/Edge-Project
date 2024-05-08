@@ -34,6 +34,23 @@ a{
     transition: .3s;
 
 }
+#navbar .container .menu ul li .dropdown{
+    display: block;
+    width: 140px;
+    top: 50px;
+    position: absolute;
+    transform: scaleX(0);
+    padding: 10px;
+    /* visibility: hidden; */
+
+}
+#navbar .container .menu ul li:hover .dropdown{
+    /* visibility: visible; */
+    
+    transform: scaleX(1); 
+    /* visibility: hidden;*/
+
+}
 #navbar .container .menu ul li a:hover{
     background-color: rgb(0, 255, 64);
     color: rgb(17, 19, 18);
