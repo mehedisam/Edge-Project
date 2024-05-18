@@ -9,25 +9,28 @@ Button.addEventListener("click",function(){
 })
 
 let firstNumber=document.querySelector('#first');
-let secondNumber=document.getElementById('second');
-let Result=document.getElementById('result');
+let Multi=document.querySelector('#multiply');
 
-function AddNumber(number1,number2){
-    if(number1=='' || number2==''){
-        result.value='';
-    }
-    else{
-        console.log(Number(number1)*Number(number2));
-        Result.value=Number(number1)*Number(number2);
+
+function AddNumber(number1){
+    number1=Number(number1);
+    var s;
+    for(let i=1;i<=10;i++){
+        var res;
+        res=number1 + "X"+i+"=";
+        res=res+(i*number1);
+        let m=document.querySelector('#multiplication');
+        let n=document.createElement('h3');
+        n.innerHTML=res;
+        m.appendChild(n);
+        n.style.color="#40A578";
+        n.style.fontFamily="Fantasy";
+        n.style.transition="5s";
     }
 }
-firstNumber.addEventListener("keyup",function(){
+Multi.addEventListener("click",function(){
     
-    AddNumber(firstNumber.value,secondNumber.value);
-    
-})
-secondNumber.addEventListener("keyup",function(){
-    
-    AddNumber(firstNumber.value,secondNumber.value);
+    AddNumber(firstNumber.value);
     
 })
+

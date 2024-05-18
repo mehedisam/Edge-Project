@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Linking to an external CSS file for styling -->
+   <link rel="stylesheet" type="text/css" href="a_style.css">
+   <!-- Specifying character encoding and viewport settings -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Setting the title of the webpage -->
+   <title>Register - Doctor Appointment System</title>
+</head>
+<body>
+  <!-- Creating a header section -->
+  <header>
+    <h1>Register for Doctor Appointment System</h1>
+  </header>
+  
+  <!-- Creating the main content section -->
+  <main>
+    <!-- Creating a form that will submit to "process_registration.php" -->
+   <form action="a_pr.php" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+      
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      
+      <!-- Creating a button to submit the form -->
+      <button type="submit">Register</button>
+    </form>
+  </main>
+  
+  <!-- Creating a footer section -->
+  <footer>
+    <p>&copy; 2023 Your Doctor Appointment System</p>
+  </footer>
+</body>
+</html>
